@@ -1,0 +1,508 @@
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1vw;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    flex-grow:1;
+    font-size: 3.5vw;
+    margin:2vw;
+    text-align: center;
+    font-family: 'Playfair Display',serif;
+    color: white; /* Vibrant blue color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+    letter-spacing: 1px; /* Spacing out letters a bit */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+
+}
+
+h1:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Brighter, more pronounced shadow on hover */
+    transform: scale(1.1); /* Slightly enlarging the text on hover */
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    order:0;
+
+}
+
+#left-logo {
+    margin-right: auto; /* Pushes everything else to the right */
+    order:-1;
+    width: 20vh !important;
+    height:auto;
+    object-fit: cover;
+}
+#left-logo:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Brighter, more pronounced shadow on hover */
+    transform: scale(1.1); /* Slightly enlarging the text on hover */
+}
+#right-logo {
+    margin-left: auto; /* Pushes everything else to the left */
+    order:1;
+    width: 20vh !important;
+    height: auto;
+    object-fit: cover;
+    
+}
+#right-logo:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Brighter, more pronounced shadow on hover */
+    transform: scale(1.1); /* Slightly enlarging the text on hover */
+}
+
+body {
+    font-family:'Playfair Display',serif;
+    margin: 0;
+    padding: 3;
+    background-color: #f0f0f0;
+}
+.navbar {
+    background: linear-gradient(to bottom, #0245ff, #2802b2); /* Gradient background */
+    box-shadow: 0 2px 4px rgba(102, 0, 255, 0.1); /* Subtle shadow */
+    border-bottom: 1px solid #ddd; /* Bottom border */
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1vh;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a {
+    font-family:'Playfair Display',serif;
+    font-size: 3vh;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff; /* White text color */
+    padding: 1vh; /* Padding around text */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a:hover {
+    background-color: rgba(0,0,0,0.1); 
+    opacity: 60%;/* Darker background on hover */
+    border-radius: 30%;
+}
+
+section {
+    margin: 1vh;
+    padding: 1vh;
+    background-color: white;
+    border-radius: 8.5vh;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header {
+    display: flex; /* Establishes a flex container */
+    justify-content: space-between;
+    align-items: center; /* Vertically centers the items in the container */
+    padding:.5vh; /* Optional: adds space between the image and the h1 */
+}
+
+.header img {
+    height: 3vh; /* Adjust the size as needed */
+    width: auto; /* Maintains the aspect ratio of the image */
+}
+.programs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1vh; /* Space below the navbar */
+}
+
+.program {
+    position: relative;
+    width: 70%; /* Adjust based on preference */
+    cursor: pointer;
+}
+
+.program img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes bottom space/gap */
+}
+
+.text-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    font-size: 20px; /* Adjust size as needed */
+}
+
+.program:hover .text-overlay {
+    opacity: 1;
+}
+button {
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px grey;
+}
+
+h2{
+    font-family:'Playfair Display',serif;
+    color: white;
+    background-color: #007BFF;
+    font-weight: 200%;
+    
+}
+
+.form{
+    width: 100%;
+    max-width: 500px;
+    margin-left:auto;
+    padding: left 20%;
+    box-sizing: border-box;
+    color: #007BFF;
+    background-color: white;
+    font-family:'Playfair Display',serif;
+    font-weight: 400;
+    text-align: right;
+    border: 5px solid rgb(0, 94, 255);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px black;
+} 
+.form-row{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+    align-content: center;
+    
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 30%; /* Makes two inputs fit on one line */
+    padding: 1%;
+    display:flex;
+    justify-self:center;
+    align-items:center;
+}
+#SignUp{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:large;
+    text-align: center;
+    padding-left: 5%;
+    padding-right:5%;
+    background-color: rgb(0, 94, 255);
+    box-shadow: 0 2px 4px black;
+    font-weight: bold;
+}
+#ConsultationText{
+    display:flex;
+    justify-content:center;
+    font-size:large;
+    text-align: center;
+    padding-left: 1%;
+    padding-right:1%;
+    background-color: rgb(0, 94, 255);
+    box-shadow: 0 2px 4px black;
+    font-weight: bold;
+
+}
+#BestProgram{
+    /* Movement of the text*/
+    display:flex;
+    height:10vh;
+    font-size:3vh;
+    flex-direction: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+/*Style of the text*/
+    font-family:'Playfair Display',serif;
+    font-weight:bold;
+}
+#BestProgram:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Brighter, more pronounced shadow on hover */
+    transform: scale(1.1); /* Slightly enlarging the text on hover */
+}
+/*CHAT GPT*/
+.container {
+    display: flex;
+    height: 60vh;
+}
+
+.quote-section, .form-section {
+    flex: 1; /* Each takes half of the container */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.quote-section {
+    background-image: url('PeleWorldCup.jpg');
+    display:flex;
+    flex-direction: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    font-size: 2.5vh;
+    padding: 2vh;
+
+}
+
+.form-section form {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 1vh;
+    box-sizing: border-box;
+    background-color: white;
+    border: 5px solid rgb(0, 94, 255);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px black;
+}
+
+.input, textarea, select {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#submit {
+    width: 100%;
+    padding: 1vh 2vh;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 1vh;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #218838;
+}
+
+#call {
+    width: 100%;
+    padding: 5%;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: .5vh;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+
+#call:hover {
+    background-color: #0056b3;
+}
+/*CHAT GPT*/
+#quotePele{
+    border:dotted;
+    border-radius: 1vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30%;
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:auto;
+    width:100%;
+
+    color:#ffffff;
+    font-family:'Playfair Display',serif;
+    font-size: 150%;
+    text-shadow:
+    -1px -1px 0 rgb(0, 38, 255),  /* Top-left shadow */
+    1px -1px 0 rgb(0, 38, 255),   /* Top-right shadow */
+    -1px 1px 0 rgb(0, 38, 255),   /* Bottom-left shadow */
+    1px 1px 0 rgb(0, 38, 255);    /* Bottom-right shadow */
+}
+#quotePele:hover {
+    text-shadow: 0 0 8px blue(255, 255, 255, 0.8); /* Brighter, more pronounced shadow on hover */
+    transform: scale(1.05); /* Slightly enlarging the text on hover */
+
+}
+
+#callUsNow{
+    display:flex;
+    text-align: center;
+    justify-content:center;
+    align-self: center;
+    size-adjust: 50%;
+    padding-left:25%;
+    padding-right: 25%;
+}
+
+footer {
+    text-align: center;
+    padding: .5vh;
+    background-color: #007BFF;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*SLIDESHOW CSS*/
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px; /* Maximum width of the slideshow */
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+    position: relative;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    width: auto;
+    margin-top: -3vh;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 6s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+/* PRIVATE COACHING PAGE*/
+#privateCoaching{
+    
+    color: #2802b2;
+}
+
+/* SUMMER CLINIC PAGE*/
+.clinicIMG{
+display:flex;
+justify-content: center;
+margin-top: 1vh;
+margin-bottom: 1vh;
+}
+.clinicIMG img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.information{
+    background-color: gold;
+    padding:2vh;
+    margin:2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 8px;
+}
+.information h1 {
+    color: #003366; /* Dark blue for the title, matching header */
+    margin-bottom: 16px; /* Space below the title */
+}
+
+.information p {
+    line-height: 1.6; /* Improved readability */
+    text-align: justify; /* Justify the paragraph */
+}
+
+/* Style for the signup form */
+.signup-form {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 20px; /* Padding inside the form area */
+    margin: 20px; /* Margin around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.signup-form form {
+    display: grid; /* Using grid to arrange form elements */
+    grid-template-columns: 1fr; /* One column layout */
+    grid-gap: 10px; /* Space between grid items */
+}
+
+.signup-form label {
+    font-weight: bold; /* Make labels bold */
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="tel"] {
+    width: 100%; /* Full width inputs */
+    padding: 8px; /* Padding inside inputs */
+    margin-top: 5px; /* Margin top for spacing */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded borders for the inputs */
+}
+
+.signup-form input[type="submit"] {
+    background-color: #006699; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor as pointer */
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #004d66; /* Darker shade on hover */
+}
+/* END SUMMER CLINIC PAGE*/
